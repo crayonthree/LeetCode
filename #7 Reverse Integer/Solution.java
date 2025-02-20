@@ -7,7 +7,6 @@ class Solution {
         String currentNumber = String.valueOf(x);
         for(int i=currentNumber.length()-1;i>=0;i--){
             char currentChar  = currentNumber.charAt(i);
-            System.out.println(currentChar);
             if(currentChar == '-'){
                 positivity = 1;
                 signConsidered = 1;
@@ -19,7 +18,6 @@ class Solution {
                 if(currentValue <= Integer.MAX_VALUE/10){
                     currentValue = currentValue*10 + currentDigit;
                     numberOfDigits++;
-                    System.out.println(currentValue);
                 }else{
                     return 0;
                 }
